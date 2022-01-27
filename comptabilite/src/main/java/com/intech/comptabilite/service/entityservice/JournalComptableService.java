@@ -39,5 +39,5 @@ public class JournalComptableService {
 		repository.findAll().forEach(result::add);
 		return result;
 	}
-	
+
 }
