@@ -70,8 +70,8 @@ public class EcritureComptableService {
 	public BigDecimal getTotalCredit(EcritureComptable ecriture) {
 		BigDecimal vRetour = BigDecimal.ZERO;
 		for (LigneEcritureComptable vLigneEcritureComptable : ecriture.getListLigneEcriture()) {
-			if (vLigneEcritureComptable.getDebit() != null) {
-				vRetour = vRetour.add(vLigneEcritureComptable.getDebit());
+			if (vLigneEcritureComptable.getCredit() != null) {
+				vRetour = vRetour.add(vLigneEcritureComptable.getCredit());
 			}
 		}
 		return vRetour;
